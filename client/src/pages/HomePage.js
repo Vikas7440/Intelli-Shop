@@ -45,7 +45,7 @@ const HomePage = () => {
   //get all cat
   const getAllCategory = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8080/api/v1/category/get-category");
+      const { data } = await axios.get("https://intelli-shop-server.vercel.app/api/v1/category/get-category");
       if (data?.success) {
         setCategories(data?.category);
       }
@@ -62,7 +62,7 @@ const HomePage = () => {
   const getAllProducts = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get(`http://localhost:8080/api/v1/product/product-list/${page}`);
+      const { data } = await axios.get(`https://intelli-shop-server.vercel.app/api/v1/product/product-list/${page}`);
       setLoading(false);
       setProducts(data.products);
     } catch (error) {
@@ -74,7 +74,7 @@ const HomePage = () => {
   //getTOtal COunt
   const getTotal = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8080/api/v1/product/product-count");
+      const { data } = await axios.get("https://intelli-shop-server.vercel.app/api/v1/product/product-count");
       setTotal(data?.total);
     } catch (error) {
       console.log(error);
@@ -89,7 +89,7 @@ const HomePage = () => {
   const loadMore = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get(`http://localhost:8080/api/v1/product/product-list/${page}`);
+      const { data } = await axios.get(`https://intelli-shop-server.vercel.app/api/v1/product/product-list/${page}`);
       setLoading(false);
       setProducts([...products, ...data?.products]);
     } catch (error) {
@@ -119,7 +119,7 @@ const HomePage = () => {
   //get filterd product
   const filterProduct = async () => {
     try {
-      const { data } = await axios.post("http://localhost:8080/api/v1/product/product-filters", {
+      const { data } = await axios.post("https://intelli-shop-server.vercel.app/api/v1/product/product-filters", {
         checked,
         radio,
       });
@@ -248,7 +248,7 @@ const HomePage = () => {
               <div className="card m-2" key={p._id} style={{ maxHeight: "1000px" }}>
                 <img
                   src=
-                  {`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                  {`https://intelli-shop-server.vercel.app/api/v1/product/product-photo/${p._id}`}
                   className="card-img-top"
                   alt={p.name}
                 />
