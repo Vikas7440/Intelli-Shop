@@ -14,7 +14,7 @@ const AIsearchInput = () => {
         e.preventDefault();
         try {
             setSearching(true);
-            const { data } = await axios.post("http://localhost:8080/api/v1/product/aifilter", {
+            const { data } = await axios.post("https://intelli-shop-server.vercel.app/api/v1/product/aifilter", {
                 keyword: values.keyword
             }
             );
