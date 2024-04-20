@@ -21,7 +21,7 @@ const AdminOrders = () => {
   const [auth, setAuth] = useAuth();
   const getOrders = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8080/api/v1/auth/all-orders");
+      const { data } = await axios.get("https://intelli-shop-server.vercel.app/api/v1/auth/all-orders");
       setOrders(data);
     } catch (error) {
       console.log(error);
