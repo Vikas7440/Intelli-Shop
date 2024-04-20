@@ -21,7 +21,7 @@ const Search = () => {
               <div className="card m-2" key={p._id} style={{ maxHeight: "1000px", backgroundColor: "rgba(128, 128, 128, 0.097)" }}>
                 <img
                   src=
-                  {`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                  {`https://intelli-shop-server.vercel.app/api/v1/product/product-photo/${p._id}`}
                   className="card-img-top"
                   alt={p.name}
                 />
