@@ -49,7 +49,7 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link to="/" className="navbar-brand" style={{ color: "#f47458" }}>
-              🛒 BAZAAR
+              🛒 BAZAAR by vikas
             </Link>
             <ul className="navbar-nav ms- ">
               {/* Rectangular switch */}
