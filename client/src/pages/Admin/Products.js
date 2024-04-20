@@ -10,7 +10,7 @@ const Products = () => {
   //getall products
   const getAllProducts = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8080/api/v1/product/get-product");
+      const { data } = await axios.get("https://intelli-shop-server.vercel.app/api/v1/product/get-product");
       setProducts(data.products);
     } catch (error) {
       console.log(error);
@@ -34,12 +34,12 @@ const Products = () => {
             {products?.map((p) => (
               <Link
                 key={p._id}
-                to={`http://localhost:8080/dashboard/admin/product/${p.slug}`}
+                to={`https://intelli-shop-server.vercel.app/dashboard/admin/product/${p.slug}`}
                 className="product-link"
               >
                 <div className="card m-2" style={{ width: "18rem" }}>
                   <img
-                    src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                    src={`https://intelli-shop-server.vercel.app/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}
                   />
