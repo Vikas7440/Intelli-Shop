@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+body {
+    background: rgb(142, 241, 241) 50.8%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* //navbar css */
+.navbar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 26px;
+    text-transform: uppercase;
+    --webkit-box-shadow: 0 8px 6px -6px #f4f4f6;
+}
+
+.imges {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+    color: white;
+    opacity: 0.8;
+    height: 37rem;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.disp {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.disp h1 {
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    animation:
+        typing 4.5s steps(90, end),
+        blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(14, 10, 3);
+    }
+}
+
+.intro {
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    opacity: 0;
+    animation:
+        showText 0.1s ease-in forwards 5s,
+        typing 4.5s steps(90, end) 5s,
+        blink-caret 1s step-end infinite 5s;
+}
+
+@keyframes showText {
+    from {
+        opacity: 0;
+        /* Start with text invisible */
+    }
+
+    to {
+        opacity: 1;
+        /* Gradually make text visible */
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(14, 10, 3);
+    }
+}
+
+.introd {
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    opacity: 0;
+    animation:
+        showText 0.1s ease-in forwards 10s,
+        typing 4.5s steps(90, end) 10s,
+        blink-caret 1s step-end infinite 10s;
+}
+
+@keyframes showText {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(14, 10, 3);
+    }
+}
+
+
+.carrd {
+    background-color: rgb(0, 170, 255);
+    width: 18rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+    color: white;
+}
+
+.box {
+    width: 100%;
+    background-color: white;
+}
+
+.cart {
+    padding-top: 15px;
+    padding-left: 2px;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.ai-search {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ai-search:hover {
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: none;
+}
+
+.nav-link {
+    padding-left: 25px;
+    color: black;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #f47458;
+}
+
+.icon {
+    font-size: 25px;
+    padding-left: 2px;
+    margin-right: 2px;
+}
+
+.active {
+    color: #f47458;
+    border-bottom: 2px solid #f47458;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-family: "roboto", sans-serif;
+    letter-spacing: 3px;
+    margin-Right: 13%;
+}
+
+.search-form {
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.newButton {
+
+    position: absolute;
+    background-color: blue;
+    font-size: 25px;
+    width: 35px;
+    top: 13px;
+    height: 35px;
+    border-radius: 5px;
+    left: 706px;
+}
+
+/* =============================
+==========footer============= */
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f47458;
+    /* Example background color */
+    color: #fff;
+    /* Example text color */
+    padding: 10px;
+    /* Example padding */
+    text-align: center;
+    /* Example center alignment */
+
+    /*color: white;
+    padding: 25px;
+    background: #000000;
+    /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right,
+            #434343,
+            #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #434343, #000000);
+    */
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.footer a:hover {
+    color: #ffff;
+    border-bottom: 1px solid #ffefba;
+}
+
+/* =================================
+======== page not found css ======= */
+.pnf {
+    display: flex;
+    min-height: 65vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pnf-title {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.pnf-heading {
+    font-weight: normal;
+}
+
+.pnf-btn {
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pnf-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================== */
+.product-link {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.cat-btn {
+    padding: 40px 0px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.cat-btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/* ================
+====dashboard
+=================== */
+
+.dashboard {
+    margin-top: 100px !important;
+}
+
+.dashboard-menu h4 {
+    background-color: #000000 !important;
+    color: white;
+    padding: 20px 0px;
+}
+
+.banner-img {
+    height: 250px;
+}
+
+
+/*button*/
+.switch {
+
+    margin: 11px 6px 6px 5px;
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 24px;
+    border-radius: 15px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ead6c9;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 19px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #f47458;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #f47458;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.product {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 35px;
+    font-family: 'Robot', sans-serif;
+
+
+}
+
+.card {
+    max-height: 205px;
+}
+
+.db {
+    margin: 2px;
+    padding: 2px;
+    height: 50%;
+    background-color: #f47458;
+}
+
+
+
+
+
+
+/*train me helpful products 
+kuch time pass ke liye batao
+sanskarik wears for puja path
+shirt pr ink saaf krne ke liye 
+kal meri exam hai exam hall me upyog hone wale saman dikha do
+char dham ki yatra ke liye jaa rha hu kuch upyogi cheeze bta do
+army join time back laguage mein kya cheeze lag
+*/
