@@ -301,7 +301,7 @@ const HomePage = () => {
                 style={{ maxHeight: "1000px" }}
               >
                 <img
-                  src={`https://intellishop-backend.onrender.com/api/v1/product/product-photo/${p._id}`}
+                  src="/images/googles.jpg"
                   className="card-img-top"
                   alt={p.name}
                 />

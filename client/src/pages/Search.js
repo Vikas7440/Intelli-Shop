@@ -29,7 +29,7 @@ const Search = () => {
               className="bg-white shadow-md rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition duration-300"
             >
               <img
-                src={`https://intellishop-backend.onrender.com/api/v1/product/product-photo/${p._id}`}
+                src="/images/googles.jpg"
                 alt={p.name}
                 className="w-full h-48 object-cover"
               />
