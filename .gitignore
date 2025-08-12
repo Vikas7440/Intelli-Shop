@@ -1,0 +1,46 @@
+# Ignore all node_modules folders anywhere in the repo
+**/node_modules/
+
+# Ignore environment variable files
+**/.env
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Ignore build outputs
+**/build/
+**/dist/
+**/.cache/
+**/.parcel-cache/
+.next/
+out/
+
+# Ignore logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore editor/project settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore coverage and test outputs
+coverage/
+*.tsbuildinfo
+
+# Ignore uploads (if any in server)
+Server/uploads/
+Server/.env
