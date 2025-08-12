@@ -1,6 +1,6 @@
 {
   "name": "ecommerce",
-  "proxy": "http://localhost:8080",
+  "proxy": "https://intellishop-backend.onrender.com",
   "version": "1.0.0",
   "description": "Ecommerce website",
   "main": "server.js",

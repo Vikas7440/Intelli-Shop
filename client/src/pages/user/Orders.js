@@ -11,7 +11,7 @@ const Orders = () => {
   const getOrders = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/auth/orders"
+        "https://intellishop-backend.onrender.com/api/v1/auth/orders"
       );
       setOrders(data);
     } catch (error) {

@@ -15,7 +15,7 @@ const AIsearchInput = () => {
     try {
       setSearching(true);
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/product/aifilter",
+        "https://intellishop-backend.onrender.com/api/v1/product/aifilter",
         {
           keyword: values.keyword,
         }
