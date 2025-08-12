@@ -42,7 +42,7 @@ const ProductDetails = () => {
       <div className="row container product-details">
         <div className="col-md-6">
           <img
-            src={`https://intellishop-backend.onrender.com/api/v1/product/product-photo/${product._id}`}
+            src="/images/googles.jpg"
             className="card-img-top"
             alt={product.name}
             height="300"
@@ -79,7 +79,7 @@ const ProductDetails = () => {
               key={p._id}
             >
               <img
-                src={`https://intellishop-backend.onrender.com/api/v1/product/product-photo/${p._id}`}
+                src="/images/googles.jpg"
                 className="card-img-top"
                 alt={p.name}
               />
